@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Expence Tracker</h1>
+
+    <!-- Input Form -->
+<input id="descInput" placeholder="Enter description" />
+<input id="amountInput" type="number" placeholder="Enter amount" />
+<select id="typeInput">
+  <option value="income">Income</option>
+  <option value="expense">Expense</option>
+</select>
+<button id="addBtn">Add Transaction</button>
+
+<!-- Summary -->
+<h2>Total Balance: ₹<span id="balance">0</span></h2>
+<h3>Income: ₹<span id="income">0</span></h3>
+<h3>Expense: ₹<span id="expense">0</span></h3>
+
+<!-- Transaction List -->
+<ul id="transactionList"></ul>
+
+<button id="exportJSON">Export JSON</button>
+<button id="exportCSV">Export CSV</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
